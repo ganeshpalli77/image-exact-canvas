@@ -36,16 +36,16 @@ const Index = () => {
       {/* Main Content */}
       <div className="w-full max-w-7xl mx-auto">
         <div className="flex flex-col md:flex-row gap-6">
-          {/* Left Column - Interviewee */}
-          <div className="w-full md:w-3/5">
+          {/* Left Column - Interviewee - Made larger */}
+          <div className="w-full md:w-3/4">
             <VideoContainer 
               type="interviewee"
               timer={questionTimer}
             />
           </div>
           
-          {/* Right Column - Interviewer */}
-          <div className="w-full md:w-2/5">
+          {/* Right Column - Interviewer - Made smaller */}
+          <div className="w-full md:w-1/4">
             <VideoContainer 
               type="interviewer"
               name="Prashanth"

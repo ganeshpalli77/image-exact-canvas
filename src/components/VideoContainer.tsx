@@ -9,8 +9,11 @@ interface VideoContainerProps {
 }
 
 const VideoContainer: React.FC<VideoContainerProps> = ({ type, timer, name }) => {
+  // Adjust height based on container type
+  const containerHeight = type === 'interviewee' ? 'h-[450px]' : 'h-64';
+  
   return (
-    <div className="w-full h-96 rounded-lg overflow-hidden relative bg-gray-100">
+    <div className={`w-full ${containerHeight} rounded-lg overflow-hidden relative bg-gray-100`}>
       {/* This is a placeholder for the video */}
       <div className="w-full h-full flex items-center justify-center">
         {type === 'interviewee' ? (
